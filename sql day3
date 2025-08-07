@@ -1,0 +1,16 @@
+EXAMPLE1
+SELECT * FROM employees;           -- all columns
+SELECT name, salary FROM employees;  -- only name and salary columns
+
+EXAMPLE2
+SELECT * FROM employees WHERE department = 'HR';
+
+SELECT * FROM employees WHERE department = 'HR' AND salary > 50000;
+
+SELECT * FROM employees WHERE name LIKE 'J%';   -- names starting with J;
+
+SELECT * FROM employees WHERE salary BETWEEN 30000 AND 60000;
+EXAMPLE3
+SELECT * FROM employees ORDER BY salary;
+
+SELECT * FROM employees ORDER BY salary DESC;
